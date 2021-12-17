@@ -11,6 +11,7 @@
 
 <textarea
   value="{{logVal}}"
+  maxlength="-1"
   style="background-color:yellow;width:100vw;height:100vh;font-size:10px;top:0;left:0;position: absolute;z-index:2"
 >
 </textarea>

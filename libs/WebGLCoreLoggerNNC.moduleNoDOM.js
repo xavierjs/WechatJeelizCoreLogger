@@ -18,6 +18,7 @@ const window = {
   canvas: null,
   innerWidth: -1,
   innerHeight: -1,
+  navigator: navigator,
   URL: {
     createObjectURL: function() {
       return null
@@ -2552,7 +2553,7 @@ window.WebGLCoreLogger = function() {
       return k;
     }};
     return a;
-  }(), sa = null, ha = {ca:null, ub:null, Kb:null, canvas:null}, Va = {VERSION:"2.0.1", init:function(a) {
+  }(), sa = null, ha = {ca:null, ub:null, Kb:null, canvas:null}, Va = {VERSION:"2.0.2", init:function(a) {
     sa = Object.assign({isGetVideo:!0, logFunc:null, canvas:null, size:256}, a);
     sa.logFunc || $a();
     ha.canvas = sa.canvas || ha.canvas;

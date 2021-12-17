@@ -1912,7 +1912,6 @@ window.WebGLCoreLogger = function() {
         });
         return m;
       }
-      u("INFO in NeuronLayerFeedForward - instance: spec =", a);
       a.normalize = a.normalize || !1;
       var e = {input:null, bias:null, Sa:null, L:null, va:null, Xa:null, Ya:null}, k = null, p = [], m = [], w = !1, g = null, n = !0, l = -1, A = a.isReorganize ? a.isReorganize : !1, B = a.kernelsCount ? !0 : !1, v = a.dynPelu ? hb.instance(a.dynPelu) : !1, h = v ? !0 : !1, G = {isEnabled:!1};
       a.hd ? (a.sparsity = "undefined" !== typeof a.sparsity ? a.sparsity : a.wa.Ma(), n = !1) : "full" === a.connectivityUp && (a.sparsity = a.wa.Ma());

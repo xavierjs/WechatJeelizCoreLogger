@@ -2,9 +2,11 @@ import WebGLCoreLogger from "../libs/WebGLCoreLoggerNNC.moduleNoDOM.js";
 import neuralNetworkModel from "../neuralNets/NN_DEFAULT";
 
 
+let _logVal = '';
+
 Page({
   data: {
-    logVal: ''
+    logVal: _logVal
   },
 
   onReady: function () {
@@ -25,8 +27,9 @@ Page({
       isGetVideo: false,
       canvas: canvas,
       logFunc: (strVal) => {
+        _logVal += strVal + '\n';
         that.setData({
-          logVal: that.data.logVal + '\n' + strVal
+          logVal: _logVal
         });
       }
     }).then(() => {

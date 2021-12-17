@@ -1,0 +1,25 @@
+
+
+<camera
+
+  device-position="front"
+  flash="off"
+  binderror="error"
+  style="width: 192px; height: 144px;top: 0;position: absolute;"
+  frame-size="small"
+></camera>
+<canvas
+  id="webgl"
+  type="webgl"
+  class="cv"
+  canvas-id="canvas"
+  width="{{width}}"
+  height="{{height}}"
+  style="width: {{width}}px; height: {{height}}px;top:0;left:0;position: absolute;z-index:1"
+>
+</canvas>
+<textarea
+  value="{{logVal}}"
+  style="background-color:yellow;top:0;left:0;position: absolute;z-index:2"
+>
+</textarea>

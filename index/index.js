@@ -23,6 +23,7 @@ Page({
     const that = this;
     WebGLCoreLogger.init({
       isGetVideo: false,
+      canvas: canvas,
       logFunc: (strVal) => {
         that.setData({
           logVal: that.data.logVal + '\n' + strVal

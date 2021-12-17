@@ -27,7 +27,7 @@ Page({
       isGetVideo: false,
       canvas: canvas,
       logFunc: (strVal) => {
-        _logVal += strVal + '\n';
+        _logVal += strVal;
         that.setData({
           logVal: _logVal
         });
